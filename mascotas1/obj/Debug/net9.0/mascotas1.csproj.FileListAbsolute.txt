@@ -1,0 +1,15 @@
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\bin\Debug\net9.0\mascotas1.exe
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\bin\Debug\net9.0\mascotas1.deps.json
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\bin\Debug\net9.0\mascotas1.runtimeconfig.json
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\bin\Debug\net9.0\mascotas1.dll
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\bin\Debug\net9.0\mascotas1.pdb
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\obj\Debug\net9.0\mascotas1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\obj\Debug\net9.0\mascotas1.AssemblyInfoInputs.cache
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\obj\Debug\net9.0\mascotas1.AssemblyInfo.cs
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\obj\Debug\net9.0\mascotas1.csproj.CoreCompileInputs.cache
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\obj\Debug\net9.0\mascotas1.sourcelink.json
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\obj\Debug\net9.0\mascotas1.dll
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\obj\Debug\net9.0\refint\mascotas1.dll
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\obj\Debug\net9.0\mascotas1.pdb
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\obj\Debug\net9.0\mascotas1.genruntimeconfig.cache
+C:\Users\fjlum\OneDrive\Documentos\pruebamascota\mascotas1\obj\Debug\net9.0\ref\mascotas1.dll
