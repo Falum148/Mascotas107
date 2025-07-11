@@ -1,0 +1,133 @@
+## Omitir los archivos temporales de Visual Studio, los resultados de la compilación y
+## archivos generados por complementos populares de Visual Studio.
+
+# Archivos específicos del usuario
+*.suo
+*.usuario
+*.sln.doc
+
+# Resultados de la compilación
+
+[dd]ebug/
+[rr]Elease/
+x64/
+[Bb]en/
+[Oo]bj/
+
+# Resultados de la prueba MSTest
+[tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+*_i.c
+*_p.c
+*_i.h
+*.calaña
+*.meta
+*.Obj
+*.Pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.Tlb
+*.Tli
+*.tlh
+*.Tmp
+*.tmp_proj
+*.registro
+*.vspscc
+*.vssscc
+.Construye
+*.pidb
+*.registro
+*.svclog
+*.Scc
+
+# Archivos de caché de Visual C++
+IPCH/
+*.Aps
+*.Ncb
+*.opensdf
+*.Sdf
+*.cachearchivo
+
+# Generador de perfiles de Visual Studio
+*.psess
+*.Vsp
+*.vspx
+
+# Kit de herramientas de automatización de orientación
+*.gpState
+
+# ReSharper es un complemento de codificación .NET
+_ReSharper*/
+*.[RR]e[Ss]harper
+*. DotSettings.user
+
+# Directorio Click-Once
+publicar/
+
+# Publicar salida web
+*. Publish.xml
+*.pubxml
+*.azurePubxml
+
+# Directorio de paquetes NuGet
+## TODO: Si tiene habilitada la restauración de paquetes NuGet, quite la marca de comentario de la siguiente línea
+Paquetes/
+## TODO: Si la herramienta que utilizas requiere repositories.config, también desmarca el comentario de la siguiente línea
+!paquetes/repositorios.config
+
+# Salida de compilación de Windows Azure
+CSX/
+*.build.csdef
+
+# Directorio de paquetes de aplicaciones de la Tienda Windows
+Paquetes de aplicaciones/
+
+# Otros
+SQL/
+*. Caché
+Papelera de cliente/
+[Ss]tyle[Cc]op.*
+![SS]tyle[Cc]op.targets
+~$*
+*~
+*.dbmdl
+*.[Págs.]ublish.xml
+
+*.publishsettings
+
+# Proyectos de RIA/Silverlight
+Generated_Code/
+
+# Copia de seguridad y presentación de informes de la conversión de un archivo de proyecto antiguo a uno más nuevo
+# Versión de Visual Studio. Los archivos de copia de seguridad no son necesarios, porque tenemos git ;-)
+_UpgradeReport_Files/
+Copia de seguridad*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+
+# Archivos de SQL Server
+App_Data/*.mdf
+App_Data/*.ldf
+
+# =========================
+# Detritus de las ventanas
+# =========================
+
+# Cachés de archivos de imagen de Windows
+Thumbs.db
+ehthumbs.db
+
+# Archivo de configuración de carpeta
+Desktop.ini
+
+# Papelera de reciclaje utilizada en recursos compartidos de archivos
+$RECYCLE. BOTE/
+
+# Archivos de la tienda de servicios de escritorio de Mac
+.DS_Store
+
+_NCrunch*
