@@ -1,4 +1,3 @@
-Inicio del programa
 
 //PASO 1: Definir la clase 
 Definir clase Mascota  
@@ -49,17 +48,17 @@ Método Constructor Mascota(nom, ed, espe, soni)
 // PASO 6: Método para emitir sonido
 Metodo EmitirSonido(especie)
 Si especie == "perro" entonces
-   Imprimir "Guau Guau"
+   Escribir "Guau Guau"
 SiNo Si especie == "gato" entonces
-   Imprimir "Miau"
+   Escribir "Miau"
 SiNo Si especie == "pájaro" entonces 
-   Imprimir "Pío Pío"
+   Escribir "Pío Pío"
 SiNo Si especie == "conejo" entoces
-   Imprimir "Coui Coui"
+   Escribir "Coui Coui"
 SiNo Si especie == "pez" entonces 
-   Imprimir "Gluo Glup"
+   Escribir "Gluo Glup"
 SiNo 
-   Imprimir "Desconocido"
+   Escribir "Desconocido"
 FinMetodo
 
 // PASO 7: Mostrar información
@@ -107,38 +106,86 @@ FinMetodo
     Fin Método
 Fin Clase
 
+Inicio del programa 
+
 // PASO 12: Crear un objeto de tipo Mascota
+
 Definir clase principal Programa
+
    Método Main()
-      Crear objeto miMascota de tipo Mascota con valores:
+
+ Escribir "Bienvenido al programa de mascotas!"
+    Mostrar opciones:
+        1. Misha (perro)
+        2. Luna (gato)
+        3. Filo (pájaro)
+    Leer opcion
+    Limpiar pantalla
+
+    Segun opcion hacer:
+      Caso 1:
+            Escribir "Has elegido a Misha, la perra."
+
+            Crear objeto miMascota de tipo Mascota con valores:
            - nombre = "Misha"
            - edad = "12"
            - especie = "perro"
            - sonido = "Guau Guau"
-// PASO 13: Usar los métodos del objeto
+
+           // PASO 13: Usar los métodos del objeto
            Llamar al método MostrarInformacion() del objeto miMascota
            Llamar al método EmitirSonido(especie) del objeto miMascota
            Llamar al método set edad (24 + (12 - 2) *4) del objeto miMascota
-// PASO 14: MASCOTA 2 Crear objeto miMascota de tipo Mascota con valores:
-           - nombre = "Filo"
-           - edad = "5"
-           - especie = "pajaro"
-           - sonido = "Pío, Pío"
-           //Usar los métodos del objeto
-           Llamar al método MostrarInformacion() del objeto miMascota
-           Llamar al método EmitirSonido(especie) del objeto miMascota
-           Llamar al método set edad (5*3) del objeto miMascota
-// PASO 15: MASCOTA 3 Crear objeto miMascota de tipo Mascota con valores:
+
+         Caso 2:
+
+            Escribir "Has elegido a Luna, la gata."  
+
+            // PASO 15: MASCOTA 3 Crear objeto miMascota de tipo Mascota con valores:
            - nombre = "Luna"
            - edad = "9"
            - especie = "gato"
            - sonido = "Miau Miau"
-         //Usar los métodos del objeto
+
+           //Usar los métodos del objeto
            Llamar al método MostrarInformacion() del objeto miMascota
            Llamar al método EmitirSonido(especie) del objeto miMascota
            Llamar al método set edad (24 + (9 - 2) *4) del objeto miMascota
 
+         Caso 3:
+            Mostrar "Has elegido a Filo, el pájaro."  
 
-Programa Fin Clase
+           // PASO 14: MASCOTA 2 Crear objeto miMascota de tipo Mascota con valores:
+           - nombre = "Filo"
+           - edad = "5"
+           - especie = "pajaro"
+           - sonido = "Pío, Pío"
 
-Fin del programa
+           //Usar los métodos del objeto
+           Llamar al método MostrarInformacion() del objeto miMascota
+           Llamar al método EmitirSonido(especie) del objeto miMascota
+           Llamar al método set edad (5*3) del objeto miMascota
+
+         Otro:
+            Escribir "Opción no válida. Saliendo del programa."
+            Terminar programa
+    FinSegun
+
+    Escribir "Gracias por usar el programa de mascotas!"
+    Escribir "¿Deseas ver la información de otra mascota? (s/n)"
+    Leer respuesta
+
+    Si respuesta = "s" Entonces
+        Limpiar pantalla
+        Reiniciar el programa (volver al inicio)
+    Sino
+        Mostrar "Saliendo del programa..."
+        Esperar a que el usuario presione una tecla
+    FinSi
+
+Fin del Programa
+
+
+
+
+
