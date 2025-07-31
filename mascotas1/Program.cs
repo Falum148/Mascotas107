@@ -101,33 +101,82 @@ namespace MascotasApp
             return 20 + (edad - 1) * 6;
         }
     }
-
+    
     // PASO 12: Clase principal
     class Programa
     {
         static void Main(string[] args)
         {
-            // PASO 13: Crear un objeto de tipo Mascota
-            Mascota miMascota = new Mascota("Misha", 12, "perro", "Guau Guau");
 
-            // PASO 14: Usar los métodos del objeto
-            miMascota.MostrarInformacion(); // Mostrar información de la mascota
-            miMascota.EmitirSonido(); // Emitir sonido del perro
-            miMascota.SetEdad(24 + (12- 2) * 4); // Cambiar la edad de la mascota
+            Console.WriteLine("Bienvenido al programa de mascotas!");
+            Console.WriteLine("por favor, elige una mascota para mostrar su información:");
+            Console.WriteLine("1. Misha (perro)");
+            Console.WriteLine("2. Luna (gato)");
+            Console.WriteLine("3. Filo (pájaro)");
+            int opcion = int.Parse(Console.ReadLine());
+            Console.Clear(); // Limpiar la consola
 
-            // PASO 15: Mascota 2
-            miMascota = new Mascota("Filo", 5, "pajaro", "Pio Pío");
-            miMascota.MostrarInformacion(); // Mostrar información de la mascota
-            miMascota.EmitirSonido(); // Emitir sonido del pájaro
-            miMascota.SetEdad(5 * 3); // Cambiar la edad de la mascota
+            // Validar la opción elegida
+            switch (opcion)
+            {
+                case 1:
+                    Console.WriteLine("Has elegido a Misha, la perra.");
 
-            // PASO 16: Mascota 3
-            miMascota = new Mascota("Luna", 9, "gato", "Miau");
-            miMascota.MostrarInformacion(); // Mostrar información de la mascota
-            miMascota.EmitirSonido(); // Emitir sonido del gato
-            miMascota.SetEdad(24 + (9 - 2) * 4); // Cambiar la edad de la mascota
+                    // PASO 13: Crear un objeto de tipo Mascota
+                    Mascota miMascota = new Mascota("Misha", 12, "perro", "Guau Guau");
 
-            Console.ReadLine(); // Pausa para ver la salida
+                    // PASO 14: Usar los métodos del objeto
+                    miMascota.MostrarInformacion(); // Mostrar información de la mascota
+                    miMascota.EmitirSonido(); // Emitir sonido del perro
+                    miMascota.SetEdad(24 + (12 - 2) * 4); // Cambiar la edad de la mascota
+
+                    break;
+
+
+                case 2:
+                    Console.WriteLine("Has elegido a Luna, la gata.");
+
+                    // PASO 16: Mascota 3
+                    miMascota = new Mascota("Luna", 9, "gato", "Miau");
+
+                    miMascota.MostrarInformacion(); // Mostrar información de la mascota
+                    miMascota.EmitirSonido(); // Emitir sonido del gato
+                    miMascota.SetEdad(24 + (9 - 2) * 4); // Cambiar la edad de la mascota
+
+                    break;
+
+
+                case 3:
+                    Console.WriteLine("Has elegido a Filo, el pájaro.");
+
+                    // PASO 15: Mascota 2
+                    miMascota = new Mascota("Filo", 5, "pajaro", "Pio Pío");
+
+                    miMascota.MostrarInformacion(); // Mostrar información de la mascota
+                    miMascota.EmitirSonido(); // Emitir sonido del pájaro
+                    miMascota.SetEdad(5 * 3); // Cambiar la edad de la mascota
+
+                    break;
+
+                default:
+                    Console.WriteLine("Opción no válida. Saliendo del programa.");
+                    return;
+            }
+
+            Console.WriteLine("\nGracias por usar el programa de mascotas!");
+            Console.WriteLine("deseas ver la información de otra mascota? (s/n)");
+            string respuesta = Console.ReadLine().ToLower();
+            if (respuesta == "s")
+            {
+                Console.Clear(); //limpiar la consola
+                Main(args); // Llamar al método Main para reiniciar el programa
+            }
+            else
+            {
+                Console.WriteLine("Saliendo del programa...");
+                Console.WriteLine("Presiona cualquier tecla para salir...");
+                Console.ReadKey(); // Esperar a que el usuario presione una tecla
+            }
         }
     }
 }
